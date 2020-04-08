@@ -44,9 +44,9 @@ export default function About() {
           </div>
           <div className="technical-part">
             <img className="about-pic-two" src={aboutPicTwo} />
-            <h1 className="tech-text">Technical Experience</h1>
             <div className="tech-para">
               <div className="skills-para">
+                <h1 className="tech-text">Technical Experience</h1>
                 <h2>Skills</h2>
                 <li>2+ years HTML,CSS,JavaScript</li>
                 <li>1+ year React.js,Node.js,Gatsby,Express(javascript)</li>

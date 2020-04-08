@@ -6,6 +6,8 @@
 *,
 html {
   margin: 0px;
+
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -168,6 +170,7 @@ $card: white;
   letter-spacing: 0.1rem;
   outline: none;
   margin-top: 55px;
+  text-decoration: none;
   font-size: 20px;
   cursor: pointer;
   padding: 11.5px 18px;
@@ -285,7 +288,8 @@ $card: white;
 
 .projects-container {
   text-align: center;
-  margin-top: 40px;
+  // margin-top: 40px;
+  padding-top: 70px;
   @include flex;
   flex-wrap: wrap;
   width: 100%;
@@ -530,9 +534,9 @@ $card: white;
   cursor: pointer;
   position: relative;
   bottom: 60px;
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
+  width: 110px;
+  height: 110px;
+  margin: 8px;
   -webkit-filter: drop-shadow(2px 2px 2px #222);
 }
 .bottom-icons:hover {
@@ -633,6 +637,9 @@ $card: white;
     max-width: 500px;
   }
 }
+.techy-icons {
+  margin-top: 70px;
+}
 
 // .projects-header {
 //   width: 100%;
@@ -658,13 +665,14 @@ $card: white;
 }
 .tech-para {
   font-size: 24px;
-  margin-top: 70px;
+  margin-top: 135px;
   text-align: center;
   .skills-para {
-    position: relative;
-    bottom: 85px;
+    // position: relative;
+    // bottom: 85px;
     line-height: 2;
-    font-weight: bold;
+
+    font-family: "Lato", sans-serif;
     h2 {
       color: rgb(47, 109, 163);
       font-weight: bold;
@@ -699,16 +707,17 @@ $card: white;
     margin-top: 80px;
     background-color: rgb(59, 123, 179);
     box-shadow: 1px 3px 10px -2px rgba(172, 159, 159, 0.2),
-      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      0px 2px 2px 0px rgba(158, 147, 147, 0.14),
+      0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   }
   .about-section-main {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 50%;
     margin-top: 25px;
     margin-bottom: 25px;
-    // background-color: rgb(150, 88, 88);
+    // background-color: rgb(88, 135, 150);
     flex-wrap: wrap;
     .about-me-part {
       display: flex;
@@ -741,8 +750,9 @@ $card: white;
       margin-bottom: 20px;
       // background-color: rgb(122, 62, 62);
       .tech-text {
-        position: relative;
-        bottom: 30px;
+        // position: relative;
+        // bottom: 30px;
+        font-size: 30px;
         font-weight: bold;
         opacity: 0.8;
       }
@@ -782,7 +792,7 @@ $card: white;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  height: 200px;
+  height: 140px;
   color: black;
   // @include poly;
   background: linear-gradient(

@@ -125,11 +125,11 @@ export default function Homepage() {
               <span className="linkedin-text">LinkedIn</span>
             </button>
           </div>
-          <button className="projects-button">
+          <a className="projects-button" href="#projects-container">
             <span>
               See Projects <span className="down-arrow">▼</span>
             </span>
-          </button>
+          </a>
         </div>
         <div className="section-one poly">
           <div className="tech-container1">
@@ -177,7 +177,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="projects-container">
+        <div className="projects-container" id="projects-container">
           {projects.map((item, i) => (
             <div className="card">
               <div key={i}>
